@@ -21,7 +21,9 @@
                     Instagram
                 </a>
                 <div class="d-flex align-items-center">
-                    <button class="btn btn-success me-3">Create a new post</button>
+                    <button class="btn btn-success me-3" data-bs-toggle="modal" data-bs-target="#newPostModal">Create a new post</button>
+                    
+                    
                     <div class="dropdown">
                         <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="bi bi-gear-fill"></i>
@@ -140,6 +142,40 @@
                     </div>
                 </div>
             </div>
+
+            <div class="modal fade" id="newPostModal" tabindex="-1" aria-labelledby="newPostModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="newPostModalLabel">Create a new post</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <!-- caption -->
+                                <div class="mb-3">
+                                    <label for="postCaption" class="form-label">Caption:</label>
+                                    <textarea class="form-control" id="postCaption" rows="3" placeholder="Add the caption of your post here"></textarea>
+                                </div>
+                                <!-- botones -->
+                                <div class="mb-3 d-flex gap-2">
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="bi bi-camera"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="bi bi-file-image"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- pie -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success">Publish</button>
+                        </div>
+                    </div>
+                </div>
 
     </div>
 
