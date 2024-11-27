@@ -1,0 +1,11 @@
+.custom-grid img {
+    object-fit: cover;
+    width: 100%; /* Ajusta al contenedor */
+    height: 280px; /* Ajusta a un tamaño consistente */
+    margin: 5px; /* Margen entre imágenes */
+}
+
+
+.color-navbar {
+    background-color: #f5f5f5;
+}
